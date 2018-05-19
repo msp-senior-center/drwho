@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "root": {
+            "matchCondition": {
+                "route": "/",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "backendUri": "https://drwho.azurewebsites.net/api/HttpTriggerJS1"
+        }
+    }
+}

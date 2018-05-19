@@ -1,0 +1,16 @@
+{
+  "name": "drwho",
+  "version": "0.0.1",
+  "description": "who are you",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
