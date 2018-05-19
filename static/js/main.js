@@ -115,8 +115,12 @@
                 contentType: false,
                 processData: false,
                 success: function (data) {
-                    for (var i = 0; i < data.length; i ++) {
-                        document.getElementById("foundnames").innerHTML = document.getElementById("foundnames").innerHTML + data[i] + "<br>";
+                    if (data.length == 0) {
+                        alert('아무도 없어요!');
+                    } else {
+                        for (var i = 0; i < data.length; i ++) {
+                            document.getElementById("foundnames").innerHTML = document.getElementById("foundnames").innerHTML + data[i] + "<br>";
+                        }
                     }
                 },
                 error: function (data) {

@@ -6,8 +6,8 @@ const FACE_LIST_ID = 'my-face-list';
 
 module.exports = async function (context, req) {
     const name = req.query.name;
-	const addFaceAPIEndpoint = COGNITIVE_SERVICE_ENDPOINT 
-        + '/facelists/' + FACE_LIST_NAME 
+    const addFaceAPIEndpoint = COGNITIVE_SERVICE_ENDPOINT 
+        + '/facelists/' + FACE_LIST_ID 
         + '/persistedFaces?userData=' + name;
 
     const response = await axios.post(
