@@ -69,8 +69,8 @@
             var image = convertCanvasToImage(canvas);
             var blob = dataURItoByteArray(image.src);
             
-            // var url = window.location.origin + '/api/register?name=' + document.getElementById("fullname").value;
-            var url = 'https://drwho.azurewebsites.net/' + '/api/register?name=' + document.getElementById("fullname").value;
+            var url = window.location.origin + '/api/register?name=' + document.getElementById("fullname").value;
+            // var url = 'https://drwho.azurewebsites.net/' + '/api/register?name=' + document.getElementById("fullname").value;
             $.ajax({
                 type: 'POST',
                 url: url,
@@ -102,8 +102,8 @@
             var image = convertCanvasToImage(canvas);
             var blob = dataURItoByteArray(image.src);
 
-            // var url = window.location.origin + '/api/query';
-            var url = 'https://drwho.azurewebsites.net/api/query';
+            var url = window.location.origin + '/api/query';
+            // var url = 'https://drwho.azurewebsites.net/api/query';
             $.ajax({
                 type: 'POST',
                 url: url,
